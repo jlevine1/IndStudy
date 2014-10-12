@@ -11,7 +11,53 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141010203615) do
+ActiveRecord::Schema.define(version: 20141012135616) do
+
+  create_table "galleries", force: true do |t|
+    t.string  "title"
+    t.string  "rating"
+    t.string  "avatar"
+    t.string  "review"
+    t.integer "user_id"
+    t.boolean "approved"
+  end
+
+  create_table "gallery_likes", force: true do |t|
+    t.integer "user_id"
+    t.integer "gallery_id"
+  end
+
+  create_table "post_likes", force: true do |t|
+    t.integer "user_id"
+    t.integer "post_id"
+  end
+
+  create_table "posts", force: true do |t|
+    t.string   "data"
+    t.string   "author"
+    t.datetime "created_at"
+    t.integer  "user_id"
+    t.integer  "gallery_id"
+  end
+
+  create_table "profile_posts", force: true do |t|
+    t.string   "data"
+    t.string   "author"
+    t.datetime "created_at"
+    t.integer  "user_id"
+    t.integer  "profile_id"
+  end
+
+  create_table "profiles", force: true do |t|
+    t.string   "email"
+    t.datetime "created_at"
+    t.integer  "user_id"
+  end
+
+  create_table "user_followers", force: true do |t|
+    t.integer "user_id"
+    t.integer "other_user_id"
+  end
 
   create_table "users", force: true do |t|
     t.string  "username"
