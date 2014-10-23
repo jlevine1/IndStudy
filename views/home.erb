@@ -1,0 +1,41 @@
+<head>
+<link rel="stylesheet" type="text/css" href="styles/desktop.css">
+</head>
+<center><div id="content">
+	sagsgsag
+	asgsagasgas
+	asgasgasg
+	<head>
+    <style>
+      #map_canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.74769,-74.004168,17),
+          zoom: 30,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map_canvas"></div>
+  </body>
+</div></center>
+</div></center>
+<div id="painting1">
+</div>
+<div id="painting2">
+</div>
+<div id="painting3">
+</div>
+<div id="painting4">
+</div>
