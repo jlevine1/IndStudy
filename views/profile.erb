@@ -1,0 +1,58 @@
+<!-- <head>
+<link rel="stylesheet" type="text/css" href="styles/desktop.css">
+</head> -->
+<head>
+	<style>
+		body {
+			background-color:black;
+		}
+		#sign_in{
+			margin-top:3.5%;
+			background-color:white;
+			width:60%;
+			min-height:50px;
+			border:.1px;
+			border-color:transparent;
+			border-radius:60px;
+			color:black;
+			min-height: 198px;
+		}
+	</style>
+</head>
+</br>
+</br>
+</br>
+</br>
+<center><div id="sign_in">
+</br>
+<div id="sign_in">
+<a href="/home"><div>Back To Home Page</a></div>
+<p><div><h1><%=User.find_by_id(params[:id]).username%>'s Profile</h1></div></p>
+<p>
+Username: &nbsp; <%=@user.username%>
+</br>
+Email: &nbsp; <%=@current_profile.email%>
+</br>
+	<%if @current_user.id==@user.id%>
+<div><a href="/edit-profile"><div>Edit Information</div></a></div>
+	<%end%>
+</p>
+<h1>Comments:</h1>
+	<% ProfilePosts.where(user_id:@user.id).each do |n| %>
+			<h2>
+				<a href="/user/<%=User.find(n.user_id).id%>">
+					<%=n.author%> 
+				</a>
+			</h2>
+				<p><%=n.data%> </p>
+	<%end%>
+	<div>
+		<textarea maxlength="150" rows="4" cols="50" name="content" form="profilepost" placeholder="Enter text here"></textarea>
+			<form method="POST" action="/profile-post-process/<%=@user.id%>" id="profilepost">
+				<input type="hidden" name="profile_id" value="<%=@profile.id%>">
+				<input type="submit">
+			</form>
+			</br>
+	</div>
+</div>
+</center>

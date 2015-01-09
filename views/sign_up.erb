@@ -1,0 +1,27 @@
+<head>
+<link rel="stylesheet" type="text/css" href="styles/desktop.css">
+</head>
+</br>
+</br>
+</br>
+<center><div id="sign_in">
+</br>
+<form method="POST" action="/sign-up-process">
+	<%="<div style='color:red; font-size:18px;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#{flash[:message]}</div>" if flash[:message]%>
+	
+	<label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-Mail</label>
+	<input type="email" required name="email">
+</br>
+</br>
+	<label for="username">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username</label>
+	<input type="text" required name="username">
+</br>
+</br>
+	<label for="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password</label>
+	<input type="password" required name="password">
+</br>
+</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" value="Create Account">
+</br>
+</br>
+</form>

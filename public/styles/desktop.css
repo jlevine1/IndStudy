@@ -14,6 +14,18 @@ body{
 	position:relative;
 }
 
+#sign_in{
+	margin-top:3.5%;
+	background-color:white;
+	width:60%;
+	min-height:50px;
+	border:.1px;
+	border-color:transparent;
+	border-radius:60px;
+	color:black;
+	min-height: 198px;
+}
+
 #painting1{
 	margin-top:-42%;
 	right:-5%;
@@ -25,6 +37,12 @@ body{
 	border-radius:60px;
 	color:black;
 	position:relative;
+	font-size: 25px;
+}
+
+#cover a{
+	color:black;
+	text-decoration:none;
 }
 
 #painting2{
@@ -38,6 +56,7 @@ body{
 	border-radius:60px;
 	color:black;
 	position:relative;
+	font-size:25px;
 }
 
 #painting3{
@@ -80,3 +99,49 @@ body{
 	position:relative;
 	background-color:black;*/
 }
+
+#btn {
+  background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #ff0000, #000000);
+  background-image: -moz-linear-gradient(top, #ff0000, #000000);
+  background-image: -ms-linear-gradient(top, #ff0000, #000000);
+  background-image: -o-linear-gradient(top, #ff0000, #000000);
+  background-image: linear-gradient(to bottom, #ff0000, #000000);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  text-shadow: 0px 0px 0px #665e66;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #f5f5f5;
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: none;
+  width:13%;
+  height:2%;
+}
+
+#btn5{
+  background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #ff0000, #000000);
+  background-image: -moz-linear-gradient(top, #ff0000, #000000);
+  background-image: -ms-linear-gradient(top, #ff0000, #000000);
+  background-image: -o-linear-gradient(top, #ff0000, #000000);
+  background-image: linear-gradient(to bottom, #ff0000, #000000);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  text-shadow: 0px 0px 0px #665e66;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: helvetica;
+  color: #f5f5f5;
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+  width:20%;
+  height:2%;
+  }
